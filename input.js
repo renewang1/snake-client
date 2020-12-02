@@ -19,6 +19,9 @@ const setupInput = function(conn) {
     if (key === 'd') {
       conn.write('Move: right');
     }
+    if (key === 'p') {
+      conn.write('Say: hello everyone')
+    }
   };
   const stdin = process.stdin;
   stdin.setRawMode(true);
